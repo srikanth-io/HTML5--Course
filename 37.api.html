@@ -1,0 +1,166 @@
+<!-- Geolocation API -->
+<script>
+    const x = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
+
+<!-- HandleError and Rejections -->
+function showError(error) {
+switch(error.code) {
+case error.PERMISSION_DENIED:
+x.innerHTML = "User denied the request for Geolocation."
+break;
+case error.POSITION_UNAVAILABLE:
+x.innerHTML = "Location information is unavailable."
+break;
+case error.TIMEOUT:
+x.innerHTML = "The request to get user location timed out."
+break;
+case error.UNKNOWN_ERROR:
+x.innerHTML = "An unknown error occurred."
+break;
+}
+}
+
+<!-- The getCurrentPosition() Method - Return Data -->
+coords.latitude - The latitude as a decimal number (always returned)
+coords.longitude - The longitude as a decimal number (always returned)
+coords.accuracy - The accuracy of position (always returned)
+coords.altitude - The altitude in meters above the mean sea level (returned if available)
+coords.altitudeAccuracy - The altitude accuracy of position (returned if available)
+coords.heading - The heading as degrees clockwise from North (returned if available)
+coords.speed - The speed in meters per second (returned if available)
+timestamp The date/time of the response (returned if available)
+
+<!-- Geoloaction Object -->
+<script>
+    const X = document.getElementById("demo");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.watchPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
+
+
+<!-- Drag and Drop API -->
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+<!-- Web Storage API -->
+if (typeof(Storage) !== "undefined") {
+// Code for localStorage/sessionStorage.
+} else {
+// Sorry! No Web Storage support..
+}
+
+<!-- Local Storage -->
+if (localStorage.clickcount) {
+localStorage.clickcount = Number(localStorage.clickcount) + 1;
+} else {
+localStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+localStorage.clickcount + " time(s).";
+
+<!-- Session Storage -->
+if (sessionStorage.clickcount) {
+sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+} else {
+sessionStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+sessionStorage.clickcount + " time(s) in this session.";
+
+<!-- web workers API -->
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
+
+<script>
+    var w;
+
+    function startWorker() {
+        if (typeof (Worker) !== "undefined") {
+            if (typeof (w) == "undefined") {
+                w = new Worker("demo_workers.js");
+            }
+            w.onmessage = function (event) {
+                document.getElementById("result").innerHTML = event.data;
+            };
+        } else {
+            document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+        }
+    }
+
+    function stopWorker() {
+        w.terminate();
+        w = undefined;
+    }
+</script>
+
+<!-- HTML SSE API -->
+<!-- Server-Sent Events - One Way Messaging -->
+var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+document.getElementById("result").innerHTML += event.data + "<br>";
+};
+
+<!-- Check Server-Sent Events Support -->
+if(typeof(EventSource) !== "undefined") {
+// Yes! Server-sent events support!
+// Some code.....
+} else {
+// Sorry! No server-sent events support..
+}
+
+<!-- Server-Side Code -->
+<?php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$time = date('r');
+echo "data: The server time is: {$time}\n\n";
+flush();
+?>
+
+<!-- Event Souce Object -->
+onopen When a connection to the server is opened
+onmessage When a message is received
+onerror When an error occurs

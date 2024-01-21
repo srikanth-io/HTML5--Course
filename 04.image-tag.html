@@ -1,0 +1,47 @@
+<!-- Image tag defines browser to show the picture -->
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.8JupcLPN_V7YSuIiPM58KwHaFK%26pid%3DApi&f=1&ipt=dd2e81b9f0c63f501c07aed622917602b504ec683d9a87f0f3b72ee06146cd91&ipo=images" alt="Cat Picture">
+
+<!-- float image -->
+<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.8JupcLPN_V7YSuIiPM58KwHaFK%26pid%3DApi&f=1&ipt=dd2e81b9f0c63f501c07aed622917602b504ec683d9a87f0f3b72ee06146cd91&ipo=images" alt="" style="float:left">This is floating image </p>
+<br>
+
+<!-- sizes of Image 
+width
+height-->
+
+
+<!-- image format supports -->
+1. APNG
+2. GIF
+3. ICO
+4. JPEG
+5. PNG
+6. SVG
+
+<br>
+<!-- image map -->
+<img src="https://www.w3schools.com/html/workplace.jpg" alt="workplace" usemap="#workmap">
+<!-- this is the normal image we don't do any mapping -->
+
+<map name="workmap"> <!--This will put map to the image-->
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"> <!--We can choose which area to select to make clickable-->
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+<!-- this is mapped image , Why we use map? whenever we insert a image with multiple assets having some products or items to make clickable has separately in one image (its like linking)-->
+
+<!-- shapes
+1.rect => rectangle shape
+circle => circle shape
+poly => Polygon shape
+default -->
+
+
+<!-- Picture -->
+<picture>
+    <source media="(min-width:650px)" srcset="https://www.w3schools.com/html/workplace.jpg">
+</picture>
+
+<!-- When we use this picture element
+1. Bandwidth
+2. Format Support -->

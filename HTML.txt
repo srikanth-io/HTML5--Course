@@ -1,0 +1,39 @@
+HTML Stands :-
+
+HTML stands for Hyper Text Markup Language
+HTML is not a case sensitive
+HTML helps to Creating web pages
+TO describes the structure of a Web pages
+Consists of series of elements
+HTML elements tells the browser how to display the content
+
+
+Element tag = h1, b, p => conatins closing tags
+Empty elements => without closing tags
+
+Heading :-
+<h1></h1> - <h1>......<h6>
+
+Paragraph :-
+<p></p>
+<br>
+<pre></pre>
+<hr>
+
+Anchor :-
+<a href=''></a>
+
+Image :-
+<img src='' alt=''> 
+
+Nested HTML :-
+A elements conatining the other elements
+eg:
+<head>
+    <title>Basic Structure</title>
+</head>
+<body>
+    <h1>This is Heading</h1>
+    <p>This is Paragraph</p>
+</body>
+

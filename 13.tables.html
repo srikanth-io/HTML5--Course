@@ -1,0 +1,168 @@
+<!-- Table is showing the table formatted output in a browser  -->
+<!-- tr => Selecting Table row -->
+<!-- th => selecting a Table Head -->
+<!-- td => Selecting a Table Data -->
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>maria</td>
+        <td>23</td>
+        <td>Hong kong</td>
+    </tr>
+    <tr>
+        <td>lucy</td>
+        <td>22</td>
+        <td>New york</td>
+    </tr>
+</table>
+
+<!-- captions => Providing captions for the data -->
+<!-- thead => Table head is the header section -->
+<!-- tbody => Table body to make the content visible -->
+<!-- tfoot => Table foot is the Footer section -->
+
+
+<!-- Whenever we want to add border of the table -->
+<!-- in css -->
+table{
+    border: 1px solid black;
+    <!-- for collapse  -->
+    border-collapse: collapse;
+    <!-- for Rounded table borders -->
+    border-radius: 10px;
+    <!-- for border color -->
+    border-color: green;
+}
+
+<!-- we can use dotted table border also -->
+1. Dotted
+2. Dashed
+3. solid
+4. Double
+5. Groove
+6. Ridge
+7. inset
+8. outset
+9. none
+10. hidden
+
+<!-- These all we can use Border-style element in css -->
+
+<!-- Border sizes -->
+1. height
+2. width
+
+<!-- Table headers -->
+1. column
+2. row
+3. multiple
+
+<!-- for horizontal -->
+<table>
+    <tr>
+    <th>S.no</th>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Password</th>
+    </tr>
+    <tr>
+        <td>01</td>
+        <td>Moana</td>
+        <td>Moa</td>
+        <td>Moana@Moa</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Miles</td>
+        <td>Miles</td>
+        <td>Miles@Morals</td>
+    </tr>
+</table>
+
+<!-- for Verticle -->
+
+<table>
+    <tr>
+            <th>S.no</th>
+            <td>01</td>
+            <td>02</td>
+    </tr>
+    <tr>
+            <th>Name</th>
+            <td>Moana</td>
+            <td>Miles</td>
+    </tr>
+    <tr>
+            <th>Username</th>
+            <td>Moa</td>
+            <td>Miles</td>
+    </tr>
+    <tr>
+            <th>Password</th>
+            <td>Moana@Moa</td>
+            <td>Miles@Morals</td>
+    </tr>
+</table>
+
+<!-- Using css -->
+th{
+    text-align: left;
+}
+
+<!-- for Multiple columns select -->
+colspan
+
+eg:
+<table>
+    <tr>
+    <th colspan="2">
+        name
+    </th>
+    </tr>
+</table>
+<!-- for Multiple rows select -->
+rowspan
+
+<!-- Caption -->
+<table style="width:100%">
+    <caption>Monthly savings</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>$50</td>
+    </tr>
+</table>
+
+<!-- Padding & spacing -->
+th, td {
+    padding: 15px
+}
+
+<!-- cell spacing -->
+table{
+    border-spacing: 30px;
+}
+
+<!-- colgroup -->
+<!-- colgroup is used for grouping the table columns -->
+<!-- width, border, background, visiblity only can change in colgroup -->
+Empty colgroup
+
+<table>
+    <colgroup>
+    <col span="3">
+    <col span="4" style="visibility: collapse;">
+    </colgroup>
+</table>

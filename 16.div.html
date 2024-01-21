@@ -1,0 +1,53 @@
+<!-- div is used has a container in html -->
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus et veritatis hic, ducimus nisi reiciendis, alias nemo, a dicta dolores corporis? Veritatis iure officiis aspernatur maiores necessitatibus possimus id officia!</p>
+    <h1>This is Lorem content</h1>
+</div>
+
+<style>
+    div{
+        width: 50%;
+        margin:auto;
+        background-color: aquamarine;
+    }
+</style>
+
+<!-- Multiple div -->
+<div class="container">
+<div class="one">
+    <h2>london</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat voluptatibus tempore, impedit eveniet id ipsa inventore voluptatem delectus iure officia dolor dignissimos ratione sed! Id veniam eos vitae similique!</p>
+</div>
+<div class="two">
+    <h2>Oslo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat voluptatibus tempore, impedit eveniet id ipsa inventore voluptatem delectus iure officia dolor dignissimos ratione sed! Id veniam eos vitae similique!</p>
+</div>
+<div class="three">
+    <h2>Rome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat voluptatibus tempore, impedit eveniet id ipsa inventore voluptatem delectus iure officia dolor dignissimos ratione sed! Id veniam eos vitae similique!</p>
+</div>
+</div>
+
+<style>
+    .container{
+        overflow: auto;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: 53% 33% 33%;
+    }
+
+    .one, .two, .three{
+        float: inline-start;
+        min-width: 100px;
+    }
+    .one{
+        background-color: blueviolet;
+    }
+    .two{
+        background-color: violet;
+    }
+    .three{
+        background-color: blue;
+    }
+</style>

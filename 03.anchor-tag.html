@@ -1,0 +1,73 @@
+<!-- Anchor tag is used for linking or Navigating the pages -->
+<a href="https://www.linkedin.com/in/srikanth-io/"> This is a Anchor Tag</a>
+
+<!-- Link attributes 
+1. _self => default
+2. _blank => opens a new tab
+3. _parent => opens in parent frame
+4. _top => opens full body windows -->
+
+<!-- attributes and elements
+a
+href
+target
+img
+mailto -->
+
+eg:
+
+<a href="www.linkedin.com/in/srikanth-io" target="_top"></a>
+
+<!-- Two types of url
+1. Relative
+<a href="01.heading.html"></a>  without specifying the exact location
+2. Absolute 
+<a href="https://www.linkedin.com/in/srikanth-io"></a> giving exact link of the file
+-->
+
+
+<!-- images -->
+<a href="https://www.youtube.com/watch?v=Oes56FoYABc&list=PL4unWLKFsZfeVkWJhoNkyj0o2e6yxqp7u"> 
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PDdsdRhbh5zw5C7mJqPVtwHaHO%26pid%3DApi&f=1&ipt=13f36adcd8e54a95845ee442b0cdaaebd95fee0bc078f44d372cbf105fa2ef6d&ipo=images" alt="frog-smile.image">
+</a>
+
+
+<!-- Email -->
+<a href="mailto:srikanthsankar03@gmail.com">click here</a> <br>
+
+<!-- Buttons -->
+<button onclick="document.location='www.linkedin.com/in/srikanth-io'">My linkedin page</button>
+
+<!-- title -->
+<a href="www.linkedin.com/in/srikanth-io" title="checkout my profile">Linkedin</a>
+
+<!-- links color or Button also
+1. visited links
+2. unvisted links
+3. active links -->
+
+<a href="" >Link visted</a>
+
+<style>
+    a:visited:hover:active{
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited{
+        color: green;
+    }
+    a:active{
+        color: yellow;
+    }
+    a:hover{
+        color: red;
+    }
+   
+</style>
+
+<br>
+<!-- Link bookmarks -->
+
+<h2 id="bookmark">This is bookmarked content</h2> <br>
+
+<a href="07.formating-tags.html #bookmark">this jumped bookmark</a>

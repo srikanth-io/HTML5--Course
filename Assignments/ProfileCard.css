@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 5px;
+    margin: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.picture img{
+    position: relative;
+    margin: 100px;
+    border: 13px solid rgb(0, 255, 13);
+    padding: 4px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+img{
+    height: 50%;
+    width: 50%;
+}
+
+.card{
+        margin-top: 550px;
+    background-color: grey;
+    border-radius: 14px;
+    width: 30%;
+    height: fit-content;
+}

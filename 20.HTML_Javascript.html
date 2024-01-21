@@ -1,0 +1,28 @@
+<!-- script tag used to defining the client side script -->
+<!-- common uses of JS in HTML document.getElementById("demo").innerHTML="Hello from HTML Javascript" -->
+
+<script>
+    document.getElementById("Demo").innerHTML =" Hello From HTML Javascript"
+</script>
+
+for eg:
+
+<script>
+    function light(sw){
+        var pic;
+        if(sw == 0){
+            pic = "pic.bulboff.gif"
+        } else {
+            pic = "pic.bulbon.gif"
+        }
+        document.getElementById('LightBulb').src = pic;
+    }
+</script>
+
+<img id="LightBulb" srv="pic.bulboff.gif" alt="" width="100%" height="100%">
+
+
+<p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(2)">Light Off</button>
+</p>
