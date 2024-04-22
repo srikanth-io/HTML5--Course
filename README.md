@@ -1,1 +1,3 @@
-<h1 align='center' id='title'>Begineer Friendly HTML Course</h1> 
+# HTML Course -- Beginners
+
+<img src="https://Cover/HTML Cover.png" alt="Image" style="float:right; margin-left: 10px;">
