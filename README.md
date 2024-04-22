@@ -1,1 +1,1 @@
-<h1 align="center" id="title">Complete Begineer Friendly HTML Course Book</h1>
+<h1 align='center' id='title'>Begineer Friendly HTML Course</h1> 
