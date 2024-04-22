@@ -1,1 +1,1 @@
-Complete Book Friedly
+<h1 align="center" id="title">Complete Begineer Friendly HTML Course Book</h1>
